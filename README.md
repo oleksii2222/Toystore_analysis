@@ -65,15 +65,25 @@ The data was used as the source for the SQL Server data pipeline and subsequent 
 The project follows an end-to-end analytical workflow:
 
 Raw CSV Files
+
       ↓
+      
 🥉 Bronze Layer
+
       ↓
+      
 🥇 Golden Layer
+
       ↓
+      
 🐍 Python Analysis
+
       ↓
+      
 📊 Analytical Tables
+
       ↓
+      
 📈 Power BI Dashboard
 
 # 🗄️ SQL Server

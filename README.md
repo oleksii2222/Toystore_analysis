@@ -64,27 +64,19 @@ The data was used as the source for the SQL Server data pipeline and subsequent 
 
 The project follows an end-to-end analytical workflow:
 
+<pre>
 Raw CSV Files
-
       ↓
-      
 🥉 Bronze Layer
-
       ↓
-      
 🥇 Golden Layer
-
       ↓
-      
 🐍 Python Analysis
-
       ↓
-      
 📊 Analytical Tables
-
       ↓
-      
 📈 Power BI Dashboard
+</pre>
 
 # 🗄️ SQL Server
 ## 🥉 Bronze Layer
@@ -148,11 +140,12 @@ This table is used for:
 
 The Golden scripts are located in:
 
+<pre>
 scripts/
 └── golden/
     ├── golden_DDL.sql
     └── golden_load_data.sql
-
+</pre>
 ## 🐍 Python Analysis
 
 Python is used for additional transformations and analytical calculations after the data has been prepared in SQL Server.
@@ -207,6 +200,7 @@ Website pageviews are used to construct a simplified customer journey.
 
 The main funnel stages are:
 
+<pre>
 Landing
    ↓
 Products
@@ -216,7 +210,7 @@ Cart
 Checkout
    ↓
 Purchase
-
+</pre>
 Several landing pages are grouped into the Landing stage, while billing and shipping pages are combined into the Checkout stage.
 
 The resulting funnel data is prepared for visualization in Power BI.
@@ -263,6 +257,7 @@ Shows the distribution of orders between different products.
 
 The website funnel focuses on the main stages of the customer journey:
 
+<pre>
 Landing
    ↓
 Products
@@ -272,7 +267,7 @@ Cart
 Checkout
    ↓
 Purchase
-
+</pre>
 The funnel helps identify where users leave the website before completing a purchase.
 
 💡 Key Findings
@@ -286,6 +281,7 @@ The analysis provides several important insights:
 🔽 The website funnel shows a significant drop-off between the landing stage and subsequent product interactions.
 🛒 The most frequently ordered product is not necessarily the most profitable product.
 
+<pre>
 ## 📁 Project Structure
 ToyStore_analysis/
 │
@@ -313,7 +309,7 @@ ToyStore_analysis/
 │       └── tables.py
 │
 └── 📖 README.md
-
+</pre>
 # 🚀 How to Reproduce the Project
 1️⃣ Prepare SQL Server
 
@@ -441,7 +437,7 @@ This project demonstrates an end-to-end approach to data analysis, starting with
 SQL Server was used for data storage and transformation, Python and pandas were used for additional analytical calculations, and Power BI was used to visualize the final results.
 
 The project demonstrates how multiple analytical tools can be combined into a single data workflow:
-
+<pre>
 SQL Server
      ↓
 Data Transformation
@@ -453,7 +449,7 @@ Analytical Tables
 Power BI
      ↓
 Business Insights
-
+</pre>
 The main objective was not only to create visualizations, but to build a complete analytical process from raw data to actionable business insights.
 
 # 👨‍💻 Author

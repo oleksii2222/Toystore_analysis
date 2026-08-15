@@ -103,18 +103,16 @@ Website sessions
 Website pageviews
 
 The Bronze scripts are located in:
-
+<pre>
 scripts/
 └── bronze/
     ├── bronze_DDL.sql
     └── bronze_load.sql
-bronze_DDL.sql
+</pre>
 
-Creates the required Bronze layer tables.
+bronze_DDL.sql - Creates the required Bronze layer tables.
 
-bronze_load.sql
-
-Loads the raw CSV data into the Bronze layer.
+bronze_load.sql - Loads the raw CSV data into the Bronze layer.
 
 ## 🥇 Golden Layer
 
